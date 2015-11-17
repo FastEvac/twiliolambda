@@ -1,0 +1,21 @@
+{
+  "name": "twiliolamda",
+  "author": "Adam Webb",
+  "version": "0.0.1",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FastEvac/twiliolambda.git"
+  },
+  "description": "A lambda function to send sms alerts using twilio API",
+  "contributors": [
+    "ajwebb"
+  ],
+  "dependencies": {
+    "async": "^1.4.2",
+    "twilio": "^2.5.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
