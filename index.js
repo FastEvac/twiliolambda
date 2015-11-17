@@ -19,13 +19,6 @@ exports.handler = function (event, context) {
 
     console.log('Running event');
 
-    var options = {
-  	  from: config.twilio.phoneNumber,
-  	  to: event.to,
-  	  type: 'text',
-  	  text: 'Welcome to FastEvac! Click here to download the FastEvac app: http://onelink.to/uhenmj To activate the app, use activation code: ' + event.code
-  	};
-
     // Send an SMS message to the number provided in the event data.
     // End the lambda function when the send function completes.
 
@@ -48,7 +41,7 @@ exports.handler = function (event, context) {
                 consolelog(err, responseData);
                 next(err);
             }
-			  }
+			    });
 		}
     ], function (err) {
         if (err) {
